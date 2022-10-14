@@ -1,10 +1,33 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import logo from "../assets/finder.png";
+import logo from "../assets/FINDER2.png";
 import styles from '../styles/NavBar.module.css';
 import {NavLink} from 'react-router-dom';
+import { CurrentUserContext } from "../App";
 
 const NavBar = () => {
+  const currentUser = useContext(CurrentUserContext);
+
+  const loggedInIcons = <>{currentUser?.username}</>;
+  const loggedOutIcons = (
+    <>
+      <NavLink
+        className={styles.NavLink}
+        activeClassName={styles.Active}
+        to="/signin"
+      >
+        <i className="fas fa-sign-in-alt"></i>Sign in
+      </NavLink>
+      <NavLink
+        to="/signup"
+        className={styles.NavLink}
+        activeClassName={styles.Active}
+      >
+        <i className="fas fa-user-plus"></i>Sign up
+      </NavLink>
+    </>
+  );
+
   return (
     <Navbar className={styles.NavBar} expand="md" fixed="top">
       <Container>
@@ -31,22 +54,8 @@ const NavBar = () => {
             >
               <i className="fas fa-circle-info"></i>About
             </NavLink>
-            <NavLink
-            exact
-            className={styles.NavLink}
-            activeClassName={styles.Active}
-            to="/signin"
-            >
-              <i className="fas fa-sign-in-alt"></i>Sign in
-            </NavLink>
-            <NavLink 
-            exact
-            className={styles.NavLink}
-            activeClassName={styles.Active}
-            to="/signup"
-            >
-              <i className="fas fa-user-plus"></i>Sign up
-            </NavLink>
+
+            {currentUser ? loggedInIcons : loggedOutIcons}
           </Nav>
         </Navbar.Collapse>
       </Container>
