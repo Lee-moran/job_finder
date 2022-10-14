@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import logo from "../assets/FINDER2.png";
+import logo from "../assets/FINDER1.png";
 import styles from "../styles/NavBar.module.css";
 import { NavLink } from "react-router-dom";
 import {
