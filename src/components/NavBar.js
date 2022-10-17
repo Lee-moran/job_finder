@@ -47,8 +47,8 @@ const NavBar = () => {
       <NavLink 
       className={styles.NavLink} 
       to="/learn" 
-      onClick={handleSignOut}>
-        <i className="fas fa-laptop-file"></i> Learn
+      >
+      <i className="fas fa-laptop-file"></i> Learn
       </NavLink>
       <NavLink
         className={styles.NavLink}
@@ -70,6 +70,14 @@ const NavBar = () => {
   );
   const loggedOutIcons = (
     <>
+      <NavLink 
+            exact
+            className={styles.NavLink}
+            activeClassName={styles.Active}
+            to="/about"
+            >
+              <i className="fas fa-circle-info"></i> about
+            </NavLink>
       <NavLink
         className={styles.NavLink}
         activeClassName={styles.Active}
@@ -116,14 +124,6 @@ const NavBar = () => {
             >
               <i className="fas fa-home"></i>Home
               </NavLink>
-            <NavLink 
-            exact
-            className={styles.NavLink}
-            activeClassName={styles.Active}
-            to="/about"
-            >
-              <i className="fas fa-circle-info"></i> about
-            </NavLink>
 
             {currentUser ? loggedInIcons : loggedOutIcons}
           </Nav>

@@ -15,7 +15,7 @@ export const CurrentUserProvider = ({ children }) => {
 
   const handleMount = async () => {
     try {
-      const { data } = await axiosRes.get("dj-rest-auth/user/");
+      const { data } = await axiosRes.get("/dj-rest-auth/user/");
       setCurrentUser(data);
     } catch (err) {
       console.log(err);
@@ -47,17 +47,16 @@ export const CurrentUserProvider = ({ children }) => {
       }
     );
 
-
-    axiosRes.interceptors.request.use(
+    axiosRes.interceptors.response.use(
       (response) => response,
       async (err) => {
-        if(err.response?.status === 401){
+        if (err.response?.status === 401) {
           try {
-            await axios.post('/dj-rest-auth/token/refresh/');
-          } catch (error) {
+            await axios.post("/dj-rest-auth/token/refresh/");
+          } catch (err) {
             setCurrentUser((prevCurrentUser) => {
-              if(prevCurrentUser) {
-                history.push('/signin')
+              if (prevCurrentUser) {
+                history.push("/signin");
               }
               return null;
             });
@@ -67,7 +66,7 @@ export const CurrentUserProvider = ({ children }) => {
         return Promise.reject(err);
       }
     );
-  },[history]);
+  }, [history]);
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
