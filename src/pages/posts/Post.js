@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 import { axiosRes } from "../../api/axios.Defaults";
 
+
 const Post = (props) => {
   const {
     id,
