@@ -7,7 +7,7 @@ import styles from "../styles/MoreDropdown.module.css";
 
 const ThreeDots = React.forwardRef(({ onClick }, ref) => (
     <i
-        className="far fa-ellipsis-vertical"
+        className="fas fa-ellipsis-vertical"
         ref={ref}
         onClick={(event) => {
             event.preventDefault();
