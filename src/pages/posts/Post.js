@@ -90,7 +90,10 @@ const Post = (props) => {
               />
             )}
             {is_owner && (
-            <MoreDropdown />
+            <MoreDropdown 
+            handleEdit={handleEdit}
+            handleDelete={handleDelete}
+            />
             )}
           </div>
         </Media>
