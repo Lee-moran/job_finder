@@ -8,7 +8,9 @@ import SignInForm from './pages/auth/SignInForm';
 import PostCreateForm from './pages/posts/PostCreateForm';
 import PostPage from './pages/posts/PostPage';
 import PostsPage from './pages/posts/PostsPage';
+import Learn from "./pages/posts/Learn";
 import { useCurrentUser } from './contexts/CurrentUserContext';
+import About from './pages/posts/About';
 
 
 
@@ -50,11 +52,12 @@ function App() {
             />
           )}
         />
+              <Route exact path="/learn" render={() => <Learn/>}/>
               <Route exact path="/signin" render={() => <SignInForm />} />
               <Route exact path="/signup" render={() => <SignUpForm />} />
               <Route exact path="/posts/create" render={() => <PostCreateForm />} />
               <Route exact path="/posts/:id" render={() => <PostPage/>} />
-              <Route exact path="/about" render={() => <h1>about</h1>} />
+              <Route exact path="/about" render={() => <About/> } />
               <Route render={() => <p>Page not found!</p>} />
             </Switch>
           </Container>

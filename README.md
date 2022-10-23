@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+FINDER job seekers - An interactive image/job sharing app
+==================================
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* * *
 
-## Available Scripts
+ABOUT THE WEBSITE:
+------------------
 
-In the project directory, you can run:
+* * * 
 
-### `npm start`
+[Link to deployed site]()
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+_Finder_ is a public online blog-styled media platford where users can create a profile and post their images along with a title and content. Users can also view other users profiles, comment, like  them! This interactive platform is designed to provide a a rich online community as users interact with each others posts. Its idea is to give job seekers the oportunity to network and learn from with posfessional in a new way.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* * * 
 
-### `npm test`
+## Main Technologies
+- HTML, CSS, JavaScript
+- React.js
+- Bootstrap.js
+- Django REST Framework
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## TARGET AUDIENCE:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* * *
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This platform targets people who want to network with professional and learn more about careers. Anyone who wants to can create a profile can post images and content and connect with others! The search feature allows for people to find content they are interested on, follow the profiles and even learn from the learn page.
+  
+* * *
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## STRATEGY:
 
-### `npm run eject`
+Create an aesthetically pleasing, simple yet fast open source user interface content sharing app that is easy to navigate. The site allows users to create their profile (including avatar, username), and upload their own content including photos, titles and decriptions. Users can also view and interact with other users posts: liking, commenting. interact through our learn page.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The site will allow for user authentification, and basic CRUD functionality.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The goal is to create  code that is clear and allows you to update with ease.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## STRUCTURE:
+HOMEPAGE - landing page, This is the page that initially loads when you first arrive at the site. Without logging-in
+LOGO: link to home page.
+NAVBAR: about,signIn,signUp.
+ABOUT: Giving consumers the options and info before creating an account.
+SIGNUI/SIGNUP: Ability to create a profile, excisting user ability to signIn.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+LANDING PAGE: Once logged in....
+Only difference is in the Navbar: App name, AddPost, learn, Feed, Liked, Sign Out, and Profile link and avatar.
 
-## Learn More
+ADDPOST - gives loggedIn users the ability to create a post and share an image it to be like and viewed by others.
+LEARN - gives loggedIn users access to professional resourse, learning techniques.
+FEED - ability to search post by title or content.
+LIKED - shows the pics you have liked.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Fonts and Color scheme
+Exo & Ubuntu are the primary fonts I wanted to use because there soft and complamentarty. Giving of a sense of peace. the stroke in these font work well together.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Roboto
+As a fall back I used Roboto and sans serif  as the standard. Good idea to have a fall back so your content is viewable.
 
-### Code Splitting
+In terms of the color scheme I went with something slightly different. Wanting to incorperate greens and blues as there assicated with seeking jobs, money, growth..
+contrasting and vibrant colors on a white canvas.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 
+Had some major difficulties with this project, this is the third one ive made now and get a common problem across the board. CORS policy..(checked my code against the walkthrough and with tutor supposrt, checked Heroku and the urls etc. As you can tell the site is still incomplete thought i managed to slove the problem but keep running into errors relating to Dj-auth-user/registration/ etc  wasnt able to fully wrape my head around these areas.. Got help sometimes from tutor support managed to slove some errors but always came back short... restarted the project after some of the fontawsome icons wouldnt appear..  updated my kits etc.  As everything was working then suddenly didnt.. got as far as edit on one of the projects.
 
-### Analyzing the Bundle Size
+Some of the images - within the readme will show  how i wanted the site to look, function.
+taking screengrabes from the other project created.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Im at a stage where im continuing on to trying and get a full operational site.
 
-### Making a Progressive Web App
+Current issues:
+SignOut function not working - wont signOut a user.
+When creating a post - press create, it doesnt seem to create (404 error).
+PostPage - therefore doesnt display the post.. just the avatar default image.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+CORS- resolve signIn and signUp - 
+Main urls.py 
+add to the back end replacing current..
+ALLOWED_HOST = {*}
+at the bottom on the page 
+CORS_ALLOW_ALL_ORIGINS = True
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+FRONTEND - created a new variable linking to heroku 
+constant file
+"https://api-new1.herokuapp.com"
 
-### Deployment
+everytime a get or post method called i added (backend + '/posts/',
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+seemed to only resolve the signin and signup.
