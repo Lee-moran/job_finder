@@ -89,12 +89,12 @@ const Post = (props) => {
               handleDelete={handleDelete}
               />
             )}
-            {is_owner && (
+            {/* {is_owner && (
             <MoreDropdown 
             handleEdit={handleEdit}
             handleDelete={handleDelete}
             />
-            )}
+            )} */}
           </div>
         </Media>
       </Card.Body>

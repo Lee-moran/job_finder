@@ -16,7 +16,9 @@ import ProfilePage from './pages/profiles/ProfilePage';
 import UsernameForm from "./pages/profiles/UsernameForm";
 import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
-import PythonSkills from "./pages/extra/PythonSkills";
+import CodeSkills from "./pages/extra/CodeSkills";
+import CvSkills from './pages/extra/CvSkills';
+import InterviewSkills from './pages/extra/InterviewSkills';
 
 
 
@@ -70,7 +72,9 @@ function App() {
               <Route exact path="/profiles/:id/edit/username" render={() => <UsernameForm />} />
               <Route exact path="/profiles/:id/edit/password" render={() => <UserPasswordForm />}/>
               <Route exact path="/profiles/:id/edit" render={() => <ProfileEditForm />}/>
-              <Route exact path="/PythonSkills" render={() => <PythonSkills /> }/>
+              <Route exact path="/CodeSkills" render={() => <CodeSkills /> }/>
+              <Route exact path="/CvSkills" render={() => <CvSkills/>} />
+              <Route exact path="/InterviewSkills" render={() => <InterviewSkills/>} />
               <Route render={() => <p>Page not found!</p>} />
             </Switch>
           </Container>

@@ -13,11 +13,13 @@ function learn() {
       <Card>
         <Card.Img variant="top" src={code} />
         <Card.Body>
-          <Card.Title>Python Skills</Card.Title>
+          <Card.Title>Code Skills</Card.Title>
           <Card.Text>
             Come explore the world of coding.
+            Html, Css, Js, Python,
+            Django, React.
           </Card.Text>
-          <Button href="/PythonSkills" variant="outline-info">Code</Button>
+          <Button href="/CodeSkills" variant="outline-info">Code</Button>
         </Card.Body>
         <Card.Footer>
           <small className="text-muted">Last updated 3 mins ago</small>
@@ -29,9 +31,9 @@ function learn() {
         <Card.Body>
           <Card.Title>CV Master class </Card.Title>
           <Card.Text>
-            Learn the in's and out's to successul cv writting skils.
+            Learn the in's and out's of successul cv writting skils.
           </Card.Text>
-          <Button variant="outline-info">CV</Button>
+          <Button href="/CvSkills" variant="outline-info">CV</Button>
         </Card.Body>
         <Card.Footer>
           <small className="text-muted">Last updated 3 mins ago</small>
@@ -44,7 +46,7 @@ function learn() {
           <Card.Text>
             Get inside tips from industry professianl on how to approach Interviews
           </Card.Text>
-          <Button variant="outline-info">Interview</Button>
+          <Button href="/InterviewSkills" variant="outline-info">Interview</Button>
         </Card.Body>
         <Card.Footer>
           <small className="text-muted">Last updated 3 mins ago</small>
