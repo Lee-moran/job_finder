@@ -55,7 +55,6 @@ function About() {
         >
           <i className="fa-brands fa-facebook-f" />
         </a>
-
         <a
           href="https://twitter.com/"
           target="_blank"
@@ -64,14 +63,13 @@ function About() {
         >
           <i className="fa-brands fa-twitter" />
         </a>
-
         <a
           href="https://www.instagram.com/"
           target="_blank"
           rel="noreferrer"
           aria-label="Visit our Instagram page (opens in a new tab)"
         >
-          <i className="fa-brands fa-instagram" />
+          <i className="fa-brands fa-instagram"/>
         </a>
 
         <a

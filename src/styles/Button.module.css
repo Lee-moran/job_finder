@@ -20,7 +20,7 @@
 }
 
 .Button:active {
-    background-color: #2142b2 !important;
+    background-color: #2f395a !important;
 }
 
 .Button:focus {
@@ -36,8 +36,8 @@
 .BlueOutline:hover,
 .Bright:hover {
     /* color when clicked on */
-    background-color: #2142b2;
-    color: #ffffff;
+    background-color: #21abb2;
+    color: #000102;
 }
 
 .BlueOutline,
@@ -65,7 +65,7 @@
 }
 
 .Bright {
-    background-color: #2ed9ff;
-    color: #2142b2;
+    background-color: #CBF4C3;
+    color: #08596A;
 }
   

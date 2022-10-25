@@ -10,6 +10,7 @@ import {Form, Button, Image, Col, Row, Container, Alert,} from "react-bootstrap"
 import axios from "axios";
 import { useSetCurrentUser } from "../../contexts/CurrentUserContext";
 import { useRedirect } from "../../hooks/useRedirect";
+import Work from "../../assets/WorkGear.jpg";
 
 // “As a user I can sign in to the app so that I can access functionality for logged in users”
 
@@ -110,7 +111,7 @@ function SignInForm() {
       >
         <Image
           className={`${appStyles.FillerImage}`}
-          src={"https://codeinstitute.s3.amazonaws.com/AdvancedReact/hero.jpg"}
+          src={Work}
         />
       </Col>
     </Row>

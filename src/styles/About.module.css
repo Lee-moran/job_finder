@@ -10,17 +10,9 @@
 
 .SocialIconsAlign {
     display:inline-block;
+    
 }
 
-.SocialIconsAlign a {
-    font-size: 175%;
-    padding: 0 5px;
-    color: #000000;
-}
-
-.SocialIconsAlign a:hover {
-    color: #08596A;
-}
 
 /* FOOTNOTE */
 #Disclaimer {
@@ -34,13 +26,14 @@ p {
 }
 
 .box{
-    border: 1px solid rgb(123, 226, 115);
+    border: 2px solid rgb(123, 226, 115);
 }
 
 .Text {
     font-size: 15px;
     font-weight: bold;
 }
+
 
 
 
