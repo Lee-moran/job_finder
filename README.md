@@ -84,6 +84,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 FRONTEND - created a new variable linking to heroku 
 constant file
+
 "https://api-new1.herokuapp.com"
 
 everytime a get or post method called i added (backend + '/posts/',

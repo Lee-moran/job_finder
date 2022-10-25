@@ -12,6 +12,7 @@ import Learn from "./pages/posts/Learn";
 import { useCurrentUser } from './contexts/CurrentUserContext';
 import About from './pages/posts/About';
 import PostEditForm from './pages/posts/PostEditForm';
+import ProfilePage from './pages/profiles/ProfilePage';
 
 
 
@@ -60,6 +61,7 @@ function App() {
               <Route exact path="/posts/:id" render={() => <PostPage/>} />
               <Route exact path="/about" render={() => <About/> } />
               <Route exact path="/posts/:id/edit" render={() => <PostEditForm/>}/>
+              <Route exact path="/profiles/:id" render={() => <ProfilePage/>}/>
               <Route render={() => <p>Page not found!</p>} />
             </Switch>
           </Container>
