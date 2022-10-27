@@ -19,6 +19,7 @@ import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 import CodeSkills from "./pages/extra/CodeSkills";
 import CvSkills from './pages/extra/CvSkills';
 import InterviewSkills from './pages/extra/InterviewSkills';
+import NotFound from './components/NotFound';
 
 
 
@@ -75,7 +76,7 @@ function App() {
               <Route exact path="/CodeSkills" render={() => <CodeSkills /> }/>
               <Route exact path="/CvSkills" render={() => <CvSkills/>} />
               <Route exact path="/InterviewSkills" render={() => <InterviewSkills/>} />
-              <Route render={() => <p>Page not found!</p>} />
+              <Route render={() => <NotFound/>} />
             </Switch>
           </Container>
         </div>
