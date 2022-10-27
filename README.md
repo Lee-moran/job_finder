@@ -20,7 +20,6 @@ _Finder_ is a public online blog-styled media platford where users can create a 
 - Bootstrap.js
 - Django REST Framework
 
-
 ## TARGET AUDIENCE:
 
 * * *
@@ -170,13 +169,13 @@ contrasting and vibrant colors on a white canvas.
 
 * * *
 
-### DIFFCULITIES & ERRORS
+## DIFFCULITIES & ERRORS
 
 Had some major difficulties with this project, this is the third one ive made now and get a common problem across the board. CORS policy..(checked my code against the walkthrough and with tutor supposrt, checked Heroku and the urls etc. As you can tell the site is still incomplete thought i managed to slove the problem but keep running into errors relating to Dj-auth-user/registration/ etc  wasnt able to fully wrape my head around these areas.. Got help sometimes from tutor support managed to slove some errors but always came back short... restarted the project after some of the fontawsome icons wouldnt appear..  updated my kits etc.  As everything was working then suddenly didnt.. got as far as edit on one of the projects.
 
 Im at a stage where im continuing on to trying and get a full operational site.
 
-ISSUES:
+### ISSUES:
 SignOut function not working - wont signOut a user.
 When creating a post - press create, it doesnt seem to create (404 error).
 PostPage - therefore doesnt display the post.. just the avatar default image.
@@ -194,16 +193,57 @@ created a new variable linking to heroku, deployed app
 everytime a GET or POST method called i added (backend + '/posts/',
 seemed to only resolve the signin and signup.
 
-'link to these site'
+- [Front end ERRORS](https://github.com/Lee-moran/project5)
+- [live workspace](https://leemoran-project5-sfywyd9g86w.ws-eu72.gitpod.io)
 
-Manged to retrieve a functioning app, still some errors but this one has alot more to it.
-Issues 
-some of the styling isnt being applied or its just not working. eg Most Followed Profiles spacing.
+- [Backend - ERRORS](https://github.com/Lee-moran/API_DRF)
+- [Backend live](https://leemoran-apidrf-eju5075fbk9.ws-eu72.gitpod.io)
+
+# Manged to retrieve a functioning app.
+Still some errors but this app is functioning alot better then the previous ones.
+
+## Issues 
+- some of the styling isnt being applied or its just not working. eg Most Followed Profiles spacing.
+
 ![Screenshot 2022-10-25 at 16 48 25](https://user-images.githubusercontent.com/92300148/197822802-90cad2c4-d49b-404a-a8f6-5935c63d37ee.png)
 
-Add post - has an extra field to it 
+- Add post - has an extra field to it 
+
 ![Screenshot 2022-10-25 at 16 48 35](https://user-images.githubusercontent.com/92300148/197822878-7d8d2845-237e-4b4f-8b1a-362bc180f742.png)
 
 
-save button when wanting to edit a post..
+save button when wanting to edit a post.. doesnt seem to respond.
 Screen shot 
+
+
+
+# Testing 
+Lighthouse report
+
+WAVE Webaim Accessibility testing
+
+CSS Validation
+
+HTML Validation
+
+Python Validation (PEP8)
+
+
+# Bugs 
+
+# Reference
+code institute - moments project 
+youtube 
+react-bootsrap
+
+## Frameworks, Libraries, Programs and Technologies Used
+Django 3.2: Framework used to add structure to the platform
+Django AllAuth used to provide enhanced user account functionality
+Django templating language used to insert data from the database into the sites pages
+Bootstrap: Framework used to add structure and responsiveness
+Favicon Generator: Used to create favicon used on the website
+GitHub: GitHub respository is used to store the project's code after being pushed from Gitpod
+Google Fonts: Google fonts are used to add fonts for aesthetic and UX purposes
+Git: Gitpod IDE was used for version control by utilizing the Gitpod terminal to commit and Push to GitHub
+AmIResponsive: Used to generate mockup image
+lucid.app: Used to generate wireframes
