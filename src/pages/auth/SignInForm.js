@@ -11,6 +11,7 @@ import axios from "axios";
 import { useSetCurrentUser } from "../../contexts/CurrentUserContext";
 import { useRedirect } from "../../hooks/useRedirect";
 import Work from "../../assets/WorkGear.jpg";
+import { setTokenTimestamp } from "../../utils/utils";
 
 // “As a user I can sign in to the app so that I can access functionality for logged in users”
 
@@ -34,6 +35,7 @@ function SignInForm() {
     try {
       const { data } = await axios.post("/dj-rest-auth/login/", signInData);
       setCurrentUser(data.user);
+      setTokenTimestamp(data);
       history.goBack();
     } catch (err) {
       setErrors(err.response?.data);
