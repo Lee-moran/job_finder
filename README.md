@@ -220,11 +220,17 @@ Screen shot
 # Testing 
 Lighthouse report
 
-WAVE Webaim Accessibility testing
+<img width="581" alt="Screenshot 2022-10-27 at 13 34 57" src="https://user-images.githubusercontent.com/92300148/198286431-34fe1e19-15b2-4ff5-8c2e-b4d117abb61a.png">
+
 
 CSS Validation
 
+<img width="1396" alt="css" src="https://user-images.githubusercontent.com/92300148/198286523-8dbc29d6-d03d-40f5-83db-1a76778c0bc6.png">
+
+
 HTML Validation
+
+<img width="1360" alt="HTML" src="https://user-images.githubusercontent.com/92300148/198286633-245eda7b-850b-4954-85fc-9474d61c637c.png">
 
 Python Validation (PEP8)
 
