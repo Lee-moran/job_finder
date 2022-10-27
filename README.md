@@ -1,6 +1,8 @@
 FINDER job seekers - An interactive image/job sharing app
 ==================================
 
+<img width="1241" alt="Responsive" src="https://user-images.githubusercontent.com/92300148/198287057-df030d91-39b4-4d33-a7be-631e896880d9.png">
+
 * * *
 
 ABOUT THE WEBSITE:
@@ -64,16 +66,15 @@ LIKED - shows the pics you have liked.
 
 * * *
 
-### user stories 
+# User stories 
 
-## Navigation & Authentication
 ### Navigation: 
 As a user I can view a navbar from every page so that I can navigate easily between pages
 
 ### Routing: 
 - As a user I can navigate through pages quickly so that I can view content seamlessly without page refresh
 
-### Authentication - 
+### Authentication: 
 -Sign up: As a user I can create a new account so that I can access all the features for signed up users
 - Sign in: As a user I can sign in to the app so that I can access functionality for logged in users
 - Logged in Status: As a user I can tell if I am logged in or not so that I can log in if I need to
@@ -129,6 +130,7 @@ As a user I can view a navbar from every page so that I can navigate easily betw
 - As a user I can view other users profiles so that I can see their posts and learn more about them
 ### Most followed profiles: 
 - As a user I can see a list of the most followed profiles so that I can see which profiles are popular
+
 ## User profile
 ### user stats: 
 - As a user I can view statistics about a specific user: bio, number of posts, follows and users followed so that I can learn more about them
@@ -160,7 +162,7 @@ Exo & Ubuntu are the primary fonts I wanted to use because there soft and compla
 <img width="240" alt="Roboto" src="https://user-images.githubusercontent.com/92300148/197821882-9a871df6-6c0b-4de1-8d4c-e392f35bb547.png">
 
 Roboto
-As a fall back I used Roboto and sans serif  as the standard. Good idea to have a fall back so your content is viewable. "https://fonts.google.com/specimen/Roboto"
+As a fall back I used Roboto and sans serif  as the standard. Good idea to have a fall back so your content is viewable. [Roboto]("https://fonts.google.com/specimen/Roboto")
 
 In terms of the color scheme I went with something slightly different. Wanting to incorperate greens and blues as there assicated with seeking jobs, money, growth..
 contrasting and vibrant colors on a white canvas.
@@ -183,9 +185,9 @@ PostPage - therefore doesnt display the post.. just the avatar default image.
 
 CORS- resolve signIn and signUp - 
 Main urls.py 
-add to the back end replacing current..
+added to the back end replacing current..
 ALLOWED_HOST = {*}
-at the bottom on the page 
+at the bottom of the page added
 CORS_ALLOW_ALL_ORIGINS = True
 
 FRONTEND - 
@@ -207,14 +209,20 @@ Still some errors but this app is functioning alot better then the previous ones
 
 ![Screenshot 2022-10-25 at 16 48 25](https://user-images.githubusercontent.com/92300148/197822802-90cad2c4-d49b-404a-a8f6-5935c63d37ee.png)
 
+Resolved simple by add fulestop before the styling .p
+
 - Add post - has an extra field to it 
 
 ![Screenshot 2022-10-25 at 16 48 35](https://user-images.githubusercontent.com/92300148/197822878-7d8d2845-237e-4b4f-8b1a-362bc180f742.png)
 
+Resolved by adding to App.module.css
+input[type=file] {
+    display: none;
+}
+
 
 save button when wanting to edit a post.. doesnt seem to respond.
-Screen shot 
-
+Screen shot
 
 
 # Testing 
@@ -235,21 +243,19 @@ HTML Validation
 Python Validation (PEP8)
 
 
-# Bugs 
-
 # Reference
 code institute - moments project 
 youtube 
 react-bootsrap
 
 ## Frameworks, Libraries, Programs and Technologies Used
-Django 3.2: Framework used to add structure to the platform
-Django AllAuth used to provide enhanced user account functionality
-Django templating language used to insert data from the database into the sites pages
-Bootstrap: Framework used to add structure and responsiveness
-Favicon Generator: Used to create favicon used on the website
-GitHub: GitHub respository is used to store the project's code after being pushed from Gitpod
-Google Fonts: Google fonts are used to add fonts for aesthetic and UX purposes
-Git: Gitpod IDE was used for version control by utilizing the Gitpod terminal to commit and Push to GitHub
-AmIResponsive: Used to generate mockup image
-lucid.app: Used to generate wireframes
+- Django 3.2: Framework used to add structure to the platform
+- Django AllAuth used to provide enhanced user account functionality
+- Django templating language used to insert data from the database into the sites pages
+- Bootstrap: Framework used to add structure and responsiveness
+- Favicon Generator: Used to create favicon used on the website
+- GitHub: GitHub respository is used to store the project's code after being pushed from Gitpod
+- Google Fonts: Google fonts are used to add fonts for aesthetic and UX purposes
+- Git: Gitpod IDE was used for version control by utilizing the Gitpod terminal to commit and Push to GitHub
+- AmIResponsive: Used to generate mockup image
+- lucid.app: Used to generate wireframes
