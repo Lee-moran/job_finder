@@ -1,10 +1,8 @@
-import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
+import {Card, CardGroup, Button} from 'react-bootstrap';
 import code from "../../assets/Code2.jpg";
 import cv from "../../assets/Cv.jpg";
 import Interview from "../../assets/Interview.jpg";
 import styles from "../../styles/Card.module.css";
-import Button from 'react-bootstrap/Button';
 
 
 function learn() {
