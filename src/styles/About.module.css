@@ -21,12 +21,14 @@
 
 .p {
     font-size: large;
-    margin: 90px;
+    margin: 100px;
 
 }
 
 .box{
+    margin: 80px;
     border: 2px solid rgb(123, 226, 115);
+    padding: 20px;
 }
 
 .Text {

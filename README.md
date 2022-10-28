@@ -67,81 +67,99 @@ LIKED - shows the pics you have liked.
 * * *
 
 # User stories 
-
-### Navigation: 
+```
+Navigation: 
 As a user I can view a navbar from every page so that I can navigate easily between pages
 
-### Routing: 
+Routing: 
 - As a user I can navigate through pages quickly so that I can view content seamlessly without page refresh
 
-### Authentication: 
+Authentication: 
 -Sign up: As a user I can create a new account so that I can access all the features for signed up users
 - Sign in: As a user I can sign in to the app so that I can access functionality for logged in users
 - Logged in Status: As a user I can tell if I am logged in or not so that I can log in if I need to
 - Refreshing access tokens: As a user I can maintain my logged-in status until I choose to log out so that my user experience is not compromised
 
-### Navigation: 
+Navigation: 
 - Conditional rendering - As a logged out user I can see sign in and sign up options so that I can sign in/sign up
 
-### Avatar: 
+Avatar: 
 - As a user I can view user's avatars so that I can easily identify users of the application
 
-## Adding & Liking Posts
-### Create posts: 
+Adding & Liking Posts
+Create posts: 
 - As a logged in user I can create posts so that I can share my images with the world!
-### View a post: 
-- As a user I can view the details of a single post so that I can learn more about it
-### Like a post: 
-- As a logged in user I can like a post so that I can show my support for the posts that interest me
 
+View a post: 
+- As a user I can view the details of a single post so that I can learn more about it
+
+Like a post: 
+- As a logged in user I can like a post so that I can show my support for the posts that interest me
+```
 ## The Posts Page
-### View most recent posts: 
+```
+View most recent posts: 
 - As a user I can view all the most recent posts, ordered by most recently created first so that I am up to date with the newest content
 - As a user, I can search for posts with keywords, so that I can find the posts and user profiles I am most interested in.
-### View liked posts: 
+
+View liked posts: 
 - As a logged in user I can view the posts I liked so that I can find the posts I enjoy the most
-### View posts of followed users: 
+View posts of followed users: 
 - As a logged in user I can view content filtered by users I follow so that I can keep up to date with what they are posting about
-### Infinite scroll: 
+
+Infinite scroll: 
 - As a user I can keep scrolling through the images on the site, that are loaded for me automatically so that I don't have to click on "next page" etc
+```
 
 * * *
 
 ## The Post Page
-### Post page: 
+```
+Post page: 
 - As a user I can view the posts page so that I can read the comments about the post
-### Edit post: 
-- As a post owner I can edit my post title and description so that I can make corrections or update my post after it was created
-### Create a comment: 
-- As a logged in user I can add comments to a post so that I can share my thoughts about the post
-### Comment date: 
-- As a user I can see how long ago a comment was made so that I know how old a comment is
-### View comments: 
-- As a user I can read comments on posts so that I can read what other users think about the posts
-### Delete comments:
-- As an owner of a comment I can delete my comment so that I can control removal of my comment from the application
-### Edit a comment: 
-- As an owner of a comment I can edit my comment so that I can fix or update my existing comment
 
+Edit post: 
+- As a post owner I can edit my post title and description so that I can make corrections or update my post after it was created
+
+Create a comment: 
+- As a logged in user I can add comments to a post so that I can share my thoughts about the post
+
+Comment date: 
+- As a user I can see how long ago a comment was made so that I know how old a comment is
+
+View comments: 
+- As a user I can read comments on posts so that I can read what other users think about the posts
+
+Delete comments:
+- As an owner of a comment I can delete my comment so that I can control removal of my comment from the application
+
+Edit a comment: 
+- As an owner of a comment I can edit my comment so that I can fix or update my existing comment
+```
 * * *
 
 ## The Profile Page
-### Profile page:
+```
+Profile page:
 - As a user I can view other users profiles so that I can see their posts and learn more about them
-### Most followed profiles: 
+
+Most followed profiles: 
 - As a user I can see a list of the most followed profiles so that I can see which profiles are popular
 
-## User profile
-### user stats: 
+User profile:
+user stats: 
 - As a user I can view statistics about a specific user: bio, number of posts, follows and users followed so that I can learn more about them
-### Follow/Unfollow a user:
+
+Follow/Unfollow a user:
 - As a logged in user I can follow and unfollow other users so that I can see and remove posts by specific users in my posts feed
-### View all posts by a specific user: 
+
+View all posts by a specific user: 
 - As a user I can view all the posts by a specific user so that I can catch up on their latest posts, or decide I want to follow them
-### Edit profile: 
+
+Edit profile: 
 - As a logged in user I can edit my profile so that I can change my profile picture and bio
 Update username and password: As a logged in user I can update my username and password so that I can change my display name and keep my profile secure
-
+```
 * * *
 
 ## Wirerframe 
@@ -172,12 +190,13 @@ contrasting and vibrant colors on a white canvas.
 * * *
 
 ## DIFFCULITIES & ERRORS
-
+```
 Had some major difficulties with this project, this is the third one ive made now and get a common problem across the board. CORS policy..(checked my code against the walkthrough and with tutor supposrt, checked Heroku and the urls etc. As you can tell the site is still incomplete thought i managed to slove the problem but keep running into errors relating to Dj-auth-user/registration/ etc  wasnt able to fully wrape my head around these areas.. Got help sometimes from tutor support managed to slove some errors but always came back short... restarted the project after some of the fontawsome icons wouldnt appear..  updated my kits etc.  As everything was working then suddenly didnt.. got as far as edit on one of the projects.
 
 Im at a stage where im continuing on to trying and get a full operational site.
-
+```
 ### ISSUES:
+```
 SignOut function not working - wont signOut a user.
 When creating a post - press create, it doesnt seem to create (404 error).
 PostPage - therefore doesnt display the post.. just the avatar default image.
@@ -194,6 +213,7 @@ FRONTEND -
 created a new variable linking to heroku, deployed app 
 everytime a GET or POST method called i added (backend + '/posts/',
 seemed to only resolve the signin and signup.
+```
 
 - [Front end ERRORS](https://github.com/Lee-moran/project5)
 - [live workspace](https://leemoran-project5-sfywyd9g86w.ws-eu72.gitpod.io)
@@ -209,7 +229,7 @@ Still some errors but this app is functioning alot better then the previous ones
 
 ![Screenshot 2022-10-25 at 16 48 25](https://user-images.githubusercontent.com/92300148/197822802-90cad2c4-d49b-404a-a8f6-5935c63d37ee.png)
 
-Resolved simple by add fulestop before the styling .p
+Resolved simple by add fullstop before the styling .p
 
 - Add post - has an extra field to it 
 

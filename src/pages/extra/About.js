@@ -13,15 +13,18 @@ function About() {
       <hr />
       <div className={styles.box}>
       <p>
-        Here at Finder, we pride ourselver in connecting the carrer professional 
-        with the jobSeeker. Those looking to branch out and learn more about the industry 
+        Here at  <strong> Finder </strong> , we pride ourselver in connecting the carrer professional 
+        with the jobSeeker. Those you want to get an insight into the carrer they want. 
+        Getting to see the person in action.
+        Follow there day to day and see if its a match for you.
+        Those looking to branch out and learn more about the industry 
         they work in. Add extra skills, connect, and explore the professional world of business.
       </p>
       <p>
         We strive to provide you with a Online blog based platform designed just for JobSeekers 
-        and professionals wanting to learn more. To be able to view the buisness world like no other.
-        And learn from experts in there feild.
-        (signUp and start Learning)
+        and professionals wanting to learn more. Those seeking insider knowledge. 
+        To be able to view the buisness world like no other, And learn from experts in there feild.
+        <strong> (signUp and start Learning) </strong> 
         To share what you have learn and pass on that knowledge or experince.
         Being able to see the fun side of business also.
       </p>
@@ -38,7 +41,7 @@ function About() {
       </p>
       
       <p>
-        Come see, what you can learn today!
+      <strong> Come see, what you can learn today! </strong> 
       </p>
       </div>
       <br />
