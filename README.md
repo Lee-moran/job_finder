@@ -10,10 +10,14 @@ ABOUT THE WEBSITE:
 
 * * * 
 
-[Link to deployed site]()
+[Link to deployed Frontend site](https://finder-job.herokuapp.com/)
+[GitHub Frontend](https://github.com/Lee-moran/job_finder)
+[Deployed Backend](https://job-api-drf.herokuapp.com/)
+[GitHub Backtend](https://github.com/Lee-moran/DRf_job_API)
 
 _Finder_ is a public online blog-styled media platford where users can create a profile and post their images along with a title and content. Users can also view other users profiles, comment, like  them! This interactive platform is designed to provide a a rich online community as users interact with each others posts. Its idea is to give job seekers the oportunity to network and learn from with posfessional in a new way.
 
+I wanted to mash a few site together to get an overall app. instagram > linkedIn > indeed > and apply some more functionality for the user.
 * * * 
 
 ## Main Technologies
@@ -225,24 +229,24 @@ seemed to only resolve the signin and signup.
 Still some errors but this app is functioning alot better then the previous ones.
 
 ## Issues 
-- some of the styling isnt being applied or its just not working. eg Most Followed Profiles spacing.
+some of the styling isnt being applied or its just not working. eg Most Followed Profiles spacing.
 
 ![Screenshot 2022-10-25 at 16 48 25](https://user-images.githubusercontent.com/92300148/197822802-90cad2c4-d49b-404a-a8f6-5935c63d37ee.png)
+- Resolved simple by add fullstop before the styling .p
 
-Resolved simple by add fullstop before the styling .p
-
-- Add post - has an extra field to it 
+Addpost - has an extra field to it 
 
 ![Screenshot 2022-10-25 at 16 48 35](https://user-images.githubusercontent.com/92300148/197822878-7d8d2845-237e-4b4f-8b1a-362bc180f742.png)
 
-Resolved by adding to App.module.css
-input[type=file] {
-    display: none;
-}
+- Resolved by adding to App.module.css
+- input[type=file] {
+    display: none; }
 
 
-save button when wanting to edit a post.. doesnt seem to respond.
-Screen shot
+Save button when wanting to edit a post.. doesnt seem to respond.
+
+- <img width="458" alt="Screenshot 2022-10-28 at 17 48 36" src="https://user-images.githubusercontent.com/92300148/198690291-d97a3e75-9e87-4614-8c23-8ebca2502dac.png">
+
 
 
 # Testing 
@@ -260,8 +264,9 @@ HTML Validation
 
 <img width="1360" alt="HTML" src="https://user-images.githubusercontent.com/92300148/198286633-245eda7b-850b-4954-85fc-9474d61c637c.png">
 
-Python Validation (PEP8)
-
+# Improvments:
+Improve the new pages in learn. to all have a list of all tips and info in an invinite scroll. Basically copie the post and posts pages to allow the user endless access to certian tips catorgies on offer. Alow Professional to add insider knowledge and create new topics to share.
+Tailor it more towards jobs and those seeking to improve there network.
 
 # Reference
 code institute - moments project 
