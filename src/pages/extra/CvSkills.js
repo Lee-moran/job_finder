@@ -23,7 +23,7 @@ const CvSkills = () => {
               <ListGroup.Item className={styles.body}>Masters in recurting</ListGroup.Item>
             </ListGroup>
             <Card.Body>
-              <Card.Link className={styles.link} href="https://www.hays.ie/resources/career-advice/writing-a-cv"> HAYS</Card.Link>
+              <Card.Link className={styles.link} href="https://www.hays.ie/resources/career-advice/writing-a-cv" target="_blank"> HAYS</Card.Link>
             </Card.Body>
           </Card>
           </Col>
@@ -40,7 +40,7 @@ const CvSkills = () => {
               <ListGroup.Item className={styles.body}>Masters in recurting</ListGroup.Item>
             </ListGroup>
             <Card.Body>
-              <Card.Link className={styles.link} href="https://www.recruiters.ie/blog/how-to-write-a-cv-guide/"> RECRUITERS.IE </Card.Link>
+              <Card.Link className={styles.link} href="https://www.recruiters.ie/blog/how-to-write-a-cv-guide/" target="_blank"> RECRUITERS.IE </Card.Link>
             </Card.Body>
           </Card>
         </Col>
