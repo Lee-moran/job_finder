@@ -10,9 +10,9 @@ ABOUT THE WEBSITE:
 
 * * * 
 
-[Link to deployed Frontend site](https://finder-job.herokuapp.com/)
+[Link to deployed Frontend site Render Link](https://finder-gyqm.onrender.com)
 [GitHub Frontend](https://github.com/Lee-moran/job_finder)
-[Deployed Backend](https://job-api-drf.herokuapp.com/)
+[Deployed Backend Render Link](https://job-api-ht3f.onrender.com)
 [GitHub Backtend](https://github.com/Lee-moran/DRf_job_API)
 
 _Finder_ is a public online blog-styled media platford where users can create a profile and post their images along with a title and content. Users can also view other users profiles, comment, like  them! This interactive platform is designed to provide a a rich online community as users interact with each others posts. Its idea is to give job seekers the oportunity to network and learn from with posfessional in a new way.
@@ -193,45 +193,56 @@ contrasting and vibrant colors on a white canvas.
 
 * * *
 
-## DIFFCULITIES & ERRORS
+## Deployment to Heroku
 ```
-Had some major difficulties with this project, this is the third one ive made now and get a common problem across the board. CORS policy..(checked my code against the walkthrough and with tutor supposrt, checked Heroku and the urls etc. As you can tell the site is still incomplete thought i managed to slove the problem but keep running into errors relating to Dj-auth-user/registration/ etc  wasnt able to fully wrape my head around these areas.. Got help sometimes from tutor support managed to slove some errors but always came back short... restarted the project after some of the fontawsome icons wouldnt appear..  updated my kits etc.  As everything was working then suddenly didnt.. got as far as edit on one of the projects.
+In your app
+- Add the list of requirements by writing in the terminal "pip3 freeze --local > requirements.txt"
+- Git add and git commit the changes made
+Log into Heroku
+- Log into Heroku or create a new account and log in
+- top right-hand corner click "New" and choose the option Create new app if you are a new user, the "Create new app" button will appear in the middle of the screen
+- Write the app name - it has to be unique, it cannot be the same as this app
+- Choose Region - I am in Europe
+- Click "Create App"
+The page of your project opens
+- Go to Resources Tab, Add-ons, search and add Heroku Postgres
+- Choose "settings" from the menu at the top of the page
+- Go to the section "Config Vars" and click the button "Reveal Config Vars".
+- Add the below variables to the list
+Database URL will be added automatically
+Secret_key - is the Django secret key that can be generated here.
+Go back to your code
+- Procfile needs to be created in your app
+web: gunicorn PROJ_NAME.wsgi
 
-Im at a stage where im continuing on to trying and get a full operational site.
+- In settings in your app add Heroku to ALLOWED_HOSTS
+- Add and commit the changes in your code and push them to GitHub
+Final step - deployment
+- Next, go to "Deploy" in the menu bar at the top
+- Go to the section "deployment method", and choose "GitHub"
+- A new section will appear "Connect to GitHub" - Search for the repository to connect to
+- Type the name of your repository and click "search"
+- Once Heroku finds your repository - click "connect"
+- Scroll down to the section "Automatic Deploys"
+- Click "Enable automatic deploys" or choose "Deploy branch" and manually deploy
+- Click "Deploy branch"
+Once the program runs: You should see the message "the app was successfully deployed"
+- Click the button "View"
+The live link can be found here.
+
+
+Since Heroku stoped its free service the project has been migrated and deployed through
+ElephantSQL and Render
+
 ```
-### ISSUES:
-```
-SignOut function not working - wont signOut a user.
-When creating a post - press create, it doesnt seem to create (404 error).
-PostPage - therefore doesnt display the post.. just the avatar default image.
 
 
-CORS- resolve signIn and signUp - 
-Main urls.py 
-added to the back end replacing current..
-ALLOWED_HOST = {*}
-at the bottom of the page added
-CORS_ALLOW_ALL_ORIGINS = True
 
-FRONTEND - 
-created a new variable linking to heroku, deployed app 
-everytime a GET or POST method called i added (backend + '/posts/',
-seemed to only resolve the signin and signup.
-```
+## Manual Testing  
 
-- [Front end ERRORS](https://github.com/Lee-moran/project5)
-- [live workspace](https://leemoran-project5-sfywyd9g86w.ws-eu72.gitpod.io)
-
-- [Backend - ERRORS](https://github.com/Lee-moran/API_DRF)
-- [Backend live](https://leemoran-apidrf-eju5075fbk9.ws-eu72.gitpod.io)
-
-# Manged to retrieve a functioning app.
-Still some errors but this app is functioning alot better then the previous ones.
-
-## Issues 
-some of the styling isnt being applied or its just not working. eg Most Followed Profiles spacing.
-
+Some of the styling wasnt being applied or its just not working. eg Most Followed Profiles spacing.
 ![Screenshot 2022-10-25 at 16 48 25](https://user-images.githubusercontent.com/92300148/197822802-90cad2c4-d49b-404a-a8f6-5935c63d37ee.png)
+
 - Resolved simple by add fullstop before the styling .p
 
 Addpost - has an extra field to it 
@@ -242,10 +253,92 @@ Addpost - has an extra field to it
 - input[type=file] {
     display: none; }
 
+CORS policy issue 
+- Resolved with the aid of tutor support.  “I've pushed my env.py file to the Repo, and subsequently yo Heroku.”
+- Added all environment variables to RENDER
+- Updated Client Origin Dev in RENDER
 
-Save button when wanting to edit a post.. doesnt seem to respond.
+Add post extra input field issue
+- Resolved by adding to App.module.css
+- input[type=file] { display: none; }
 
-- <img width="458" alt="Screenshot 2022-10-28 at 17 48 36" src="https://user-images.githubusercontent.com/92300148/198690291-d97a3e75-9e87-4614-8c23-8ebca2502dac.png">
+500 server error:
+- Resolved with the aid of tutor support. All database migrations for both the Django project & apps needed to be cleared & remigrated. The precise steps for this have been documented in the README for the deployed backend API.
+
+CRUD functionality has been tested for each of the following: Posts | Articles | Events | Comments | Likes | Follow | Profile
+- Likes & Follow may only be created & deleted
+- The profile may only be updated
+- The location field is not being stored/updated 
+- All nav links open to the correct page. 
+- All external links open to a new browser window.
+Resolved Added target=”_blank”
+ 
+- Pages intended for logged-in users only will redirect logged-out users back to the home page.
+- Users attempting to edit the content that they did not publish are redirected back to the home page.
+- Users are able to create a new account.
+- Users with an existing account are able to log in.
+- Each user has the ability to log out.
+
+Backend issues with migration 
+- Deleted all migration from each app except __Init__.py
+Resolved re run all migrations 
+
+Follow btn 
+- 400() not sending the right data to the API.
+- ElephantSQL some rows weren't transferred when transferring Heroku Postgres data to ElephantSQL
+- In the backend removed dB.sqlite3 from gitignore and file
+- add/commit/push
+- Put dB.sqlite3 back into gitignore
+- add/commit/push again
+- Reset ElephantSQL 
+- Ran migrations backend
+- Create a new superuser 
+- Reconnect Database to ElephantSQL
+
+Env.py
+- DEV variable in your env.py, you can comment that out
+- DATABASE_URL in there as well (copying and pasting that from your elephantsql dashboard).
+- run migrations again, and create a new superuser.
+
+Reconnect to Render
+- 'clear build cache and deploy'
+- Environment variables in render need updating 
+- Removed ‘secret files' from the render
+
+
+
+
+PostEditForm Location field 
+Resolved 
+```
+useEffect(() => {
+     const handleMount = async () => {
+       try {
+         const { data } = await axiosReq.get(`/posts/${id}/`);
+         const { title, content, **location**, image, is_owner } = data;
+          is_owner ? setPostData({ title, content, **location**, image }) : history.push("/");
+       } catch (err) {
+       }
+     };
+
+```
+## React
+```
+Add to frameworks, libraries, and programs used 
+React-Bootstrap: The styling library that has aided the layout of the site, and which was introduced to us during the course of the program.
+
+```
+
+## Components
+Several components have been implemented within this project that has been reused throughout the project:
+- axiosDefault.js: for ease of communication with the backend API.
+- Asset.js: to supply the loading spinner & user avatar throughout the site.
+- DropdownMenu.js: to allow users to edit/delete their Articles, Events & Posts.
+- - CurrentUserContext.js: confirm the user logged-in status to determine what functionality is available to that user.
+- ProfileDataContext.js: provide un/follow ability to other users across PopProf & ProfPage components.
+- ToggleCollapse.js: whilst this component has only been applied to the NavBarMini, it could in theory be applied to additional dropdown menus installed on the site in the future to allow for the automatic collapse of an element upon mouse click.
+- useRedirect.js: redirects a user to another page if they are not authorized to be on the page they are trying to access.
+- utils.js: supplies functionality to all of the components that utilize the Infinite Scroll.
 
 
 
