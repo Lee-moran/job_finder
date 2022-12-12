@@ -240,6 +240,8 @@ ElephantSQL and Render
 
 ## Manual Testing  
 
+Manual Testing has been carried through out this project.
+
 Some of the styling wasnt being applied or its just not working. eg Most Followed Profiles spacing.
 ![Screenshot 2022-10-25 at 16 48 25](https://user-images.githubusercontent.com/92300148/197822802-90cad2c4-d49b-404a-a8f6-5935c63d37ee.png)
 
